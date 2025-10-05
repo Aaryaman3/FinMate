@@ -1,0 +1,33 @@
+{
+  "name": "finmate-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.42",
+    "@ai-sdk/react": "^2.0.60",
+    "@merit-systems/echo-next-sdk": "^0.0.25",
+    "ai": "^5.0.60",
+    "elevenlabs": "^1.59.0",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.4",
+    "openai": "^5.23.2",
+    "opik": "^1.8.65",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "^3.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
