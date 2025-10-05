@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { EchoAuth } from '@/components/echo-auth';
-import { MessageSquare, TrendingUp, Receipt, Eye, ArrowRight } from 'lucide-react';
+import { MessageSquare, TrendingUp, Receipt, Eye, ArrowRight, Send } from 'lucide-react';
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -49,6 +49,34 @@ export default function DashboardPage() {
               <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">Banking</span>
               <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">Taxes</span>
               <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">Credit</span>
+            </div>
+          </div>
+
+          <div
+            onClick={() => router.push('/remittance')}
+            className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all cursor-pointer group relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mr-16 -mt-16"></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-10 rounded-full -ml-12 -mb-12"></div>
+            <div className="relative z-10">
+              <div className="flex items-start justify-between mb-4">
+                <div className="p-3 bg-white bg-opacity-20 rounded-lg backdrop-blur-sm">
+                  <Send className="w-8 h-8 text-white" />
+                </div>
+                <div className="flex items-center gap-2 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
+                  <span>✨</span>
+                  <span>NEW</span>
+                </div>
+              </div>
+              <h2 className="text-2xl font-bold mb-2 text-white">💸 Send Money Home</h2>
+              <p className="text-white text-opacity-90 mb-4">
+                Compare remittance services in real-time. Save hundreds on international transfers with AI-powered recommendations.
+              </p>
+              <div className="flex gap-2 flex-wrap">
+                <span className="px-3 py-1 bg-white bg-opacity-20 backdrop-blur-sm rounded-full text-sm text-white">Live Rates</span>
+                <span className="px-3 py-1 bg-white bg-opacity-20 backdrop-blur-sm rounded-full text-sm text-white">Fee Comparison</span>
+                <span className="px-3 py-1 bg-white bg-opacity-20 backdrop-blur-sm rounded-full text-sm text-white">Save Money</span>
+              </div>
             </div>
           </div>
 

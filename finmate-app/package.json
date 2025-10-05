@@ -12,6 +12,7 @@
     "@ai-sdk/react": "^2.0.60",
     "@merit-systems/echo-next-sdk": "^0.0.25",
     "ai": "^5.0.60",
+    "axios": "^1.12.2",
     "elevenlabs": "^1.59.0",
     "framer-motion": "^12.23.22",
     "lucide-react": "^0.544.0",
@@ -19,6 +20,8 @@
     "openai": "^5.23.2",
     "opik": "^1.8.65",
     "react": "19.1.0",
+    "react-confetti": "^6.4.0",
+    "react-countup": "^6.5.3",
     "react-dom": "19.1.0",
     "recharts": "^3.2.1"
   },

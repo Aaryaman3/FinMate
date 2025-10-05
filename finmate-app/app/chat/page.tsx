@@ -259,7 +259,7 @@ export default function ChatPage() {
       <div className="bg-white border-b px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <button
-            onClick={() => router.push('/dashboard')}
+            onClick={() => router.push('/')}
             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
